@@ -5,7 +5,7 @@ const FRAME_HEIGHT=window.innerHeight
 
 
 
-const drawCircle=function(x,y){
+const circleTo=function(x,y){
 
   CANVAS_CONTEXT.clearRect(0,0,FRAME_WIDTH,FRAME_HEIGHT)
   
@@ -22,9 +22,9 @@ CANVAS.width=FRAME_WIDTH
 CANVAS.height=FRAME_HEIGHT
 
 
-drawCircle(FRAME_WIDTH/2,FRAME_HEIGHT/2)
+circleTo(FRAME_WIDTH/2,FRAME_HEIGHT/2)
 
 document.onmousemove=function(ev){
 
-  drawCircle(ev.clientX,ev.clientY)
+  circleTo(ev.clientX,ev.clientY)
 }
